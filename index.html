@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificador de Pokémon</title>
+</head>
+<body>
+    <h1>Identifique seu Pokémon</h1>
+    
+    <input type="text" id="pokemon-input" placeholder="Digite o nome ou ID do Pokémon">
+    <button onclick="fetchPokemon()">Buscar</button>
+    <br><br>
+    <button onclick="changePokemon(-1)">&#8592; Voltar</button>
+    <button onclick="changePokemon(1)">Avançar &#8594;</button>
+
+    <div id="pokemon-info" style="display: none;">
+        <h2 id="pokemon-name"></h2>
+        <img id="pokemon-image" src="" alt="Imagem do Pokémon">
+        <p><strong>ID:</strong> <span id="pokemon-id"></span></p>
+        <p><strong>Tipo(s):</strong> <span id="pokemon-types"></span></p>
+    </div>
+    
+    <p id="error-message" style="color: red;"></p>
+</body>
+<script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+</html>
